@@ -1,6 +1,6 @@
 
 module "service" {
-source                      = "D:\\ArquiteturaAWS\\arquitetura-ecs-service-module"
+  source = "D:\\ArquiteturaAWS\\arquitetura-ecs-service-module"
   #source                      = "/Users/matheus/Workspace/linuxtips/linuxtips-curso-containers-ecs-service-module"
   region                      = var.region
   cluster_name                = var.cluster_name
@@ -51,8 +51,8 @@ source                      = "D:\\ArquiteturaAWS\\arquitetura-ecs-service-modul
   scale_in_evaluation_periods  = var.scale_in_evaluation_periods
   scale_in_cooldown            = var.scale_in_cooldown
 
-   scale_tracking_cpu           = var.scale_tracking_cpu
+  scale_tracking_cpu = var.scale_tracking_cpu
 
-   alb_arn                      = data.aws_ssm_parameter.alb.value
-   scale_tracking_requests      = var.scale_tracking_requests
+  alb_arn                 = data.aws_ssm_parameter.alb.value
+  scale_tracking_requests = var.scale_tracking_requests
 }

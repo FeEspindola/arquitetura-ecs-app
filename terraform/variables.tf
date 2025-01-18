@@ -74,7 +74,7 @@ variable "ssm_private_subnet_3" {
 }
 
 variable "ssm_alb" {
-  
+
 }
 
 variable "environment_variables" {
