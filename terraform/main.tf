@@ -1,7 +1,7 @@
 
 module "service" {
   source = "D:\\ArquiteturaAWS\\arquitetura-ecs-service-module"
-  #source                      = "/Users/matheus/Workspace/linuxtips/linuxtips-curso-containers-ecs-service-module"
+ 
   region                      = var.region
   cluster_name                = var.cluster_name
   service_name                = var.service_name
